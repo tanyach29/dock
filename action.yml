@@ -1,0 +1,12 @@
+#action.yml
+name:
+description:
+inputs:
+outputs:
+  time:
+    description:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: 
+  - ${{ inputs.}}
