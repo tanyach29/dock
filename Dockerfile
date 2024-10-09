@@ -3,6 +3,7 @@ FROM continuumio/miniconda3
 
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
+#rename even though in same folder?
 COPY environment.yml .
 RUN conda env create -f environment.yml
 
@@ -12,7 +13,7 @@ RUN conda activate environment.yml
 
 # we shouldn't need the rest of this?
 #install package
-RUN conda pip install rdkit ase chytorch-rxnmap #more
+RUN conda pip install rdkit ase chytorch-rxnmap
 
 #copy application code to a new directory//create new directory
 COPY ./app .
