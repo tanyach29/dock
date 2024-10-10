@@ -1,0 +1,23 @@
+name: cmcc-rxn
+channels:
+  - rdkit
+  - pytorch
+  - openeye
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - "ase"
+  - "rdkit"
+  - "matplotlib"
+  - "ipykernel"
+  - "pip"
+  - pip:
+    - --find-links https://data.pyg.org/whl/torch-2.3.0+gpu.html
+    - "torch==2.3.0+gpu"
+    - "torch_cluster"
+    - "mccoygroup-mcutils"
+    - "chython"
+    - "chytorch"
+    - "chytorch-rxnmap"
+    - "git+https://github.com/isayevlab/AIMNet2"
