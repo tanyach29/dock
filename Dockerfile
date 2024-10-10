@@ -4,8 +4,8 @@ FROM continuumio/miniconda3
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
 #rename even though in same folder?
-COPY environment.yml .
-RUN conda env create -f environment.yml
+COPY cmcc_environment.yml .
+RUN conda env create -f cmcc_environment.yml
 
 #running conda env
 # make sure environment.yml replaced with env name
