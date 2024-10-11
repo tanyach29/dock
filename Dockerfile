@@ -8,7 +8,7 @@ RUN conda env create -f cmcc-rxn.yml
 
 #running conda env
 # make sure environment.yml replaced with env name
-RUN conda activate environment.yml
+RUN conda activate cmcc-rxn.yml
 
 # we shouldn't need the rest of this?
 #install package
