@@ -8,11 +8,12 @@ RUN conda env create -f environment.yml
 
 #running conda env
 # make sure environment.yml replaced with env name
-RUN conda activate cmcc-rxn.yml
+RUN conda init
+RUN conda activate cmcc-rxn
 
 # we shouldn't need the rest of this?
 #install package
-RUN conda pip install rdkit ase chytorch-rxnmap
+# RUN conda pip install rdkit ase chytorch-rxnmap
 
 #not necessary right now
 #copy application code to a new directory//create new directory
@@ -22,4 +23,4 @@ RUN conda pip install rdkit ase chytorch-rxnmap
 #WORKDIR /app
 
 #running application
-CMD ["python", "app.py"]
+CMD ["python"]
