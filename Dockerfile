@@ -8,8 +8,8 @@ RUN conda env create -f environment.yml
 
 #running conda env
 # make sure environment.yml replaced with env name
-RUN conda init
-RUN conda activate cmcc-rxn
+# RUN conda init
+# RUN conda activate cmcc-rxn
 
 # we shouldn't need the rest of this?
 #install package
@@ -23,4 +23,4 @@ RUN conda activate cmcc-rxn
 #WORKDIR /app
 
 #running application
-CMD ["python"]
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "cmcc-rxn"]
