@@ -1,7 +1,6 @@
 name: cmcc-rxn
 channels:
   - rdkit
-  - anaconda
   - defaults
 dependencies:
   - "rdkit"
