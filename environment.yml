@@ -2,6 +2,7 @@ name: cmcc-rxn
 channels:
   - rdkit
   - pytorch
+  - nvidia
   - openeye
   - conda-forge
   - anaconda
@@ -12,10 +13,10 @@ dependencies:
   - "matplotlib"
   - "ipykernel"
   - "pip"
+  - "pytorch=2.3.0"
+  - "pytorch-cuda=11.8"
   - pip:
     - --find-links https://data.pyg.org/whl/torch-2.3.0+cpu.html
-    - "torch==2.3.0"
-    - "torch_cluster"
     - "mccoygroup-mcutils"
     - "chython"
     - "chytorch"
