@@ -12,7 +12,4 @@ dependencies:
   - pip:
     - "ase"
     - "mccoygroup-mcutils"
-    - "chython"
-    - "chytorch"
-    - "chytorch-rxnmap"
     - "git+https://github.com/isayevlab/AIMNet2"
