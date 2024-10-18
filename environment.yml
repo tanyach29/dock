@@ -5,7 +5,7 @@ channels:
   - pytorch
   - nvidia
 dependencies:
-  - "python=2.8"
+  - "python=3.10"
   - "rdkit"
   - "matplotlib"
   - "ipykernel"
@@ -13,6 +13,6 @@ dependencies:
   - "pytorch-cuda"
   - pip:
     - "ase"
-    - "pip"
+    - "rdkit"
     - "mccoygroup-mcutils"
     - "git+https://github.com/isayevlab/AIMNet2"
