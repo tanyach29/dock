@@ -3,6 +3,7 @@ channels:
   - rdkit
   - defaults
   - pytorch
+  - anaconda
   - nvidia
 dependencies:
   - "python=3.10.0"
