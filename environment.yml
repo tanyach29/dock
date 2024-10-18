@@ -1,12 +1,16 @@
 name: cmcc-rxn
 channels:
   - rdkit
+  - pytorch
+  - nvidia
   - defaults
 dependencies:
   - "rdkit"
   - "matplotlib"
   - "ipykernel"
   - "pip"
+  - "pytorch=2.3.0"
+  - "pytorch-cuda=11.8"
   - pip:
     - "ase"
     - "mccoygroup-mcutils"
