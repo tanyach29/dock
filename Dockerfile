@@ -1,10 +1,14 @@
 FROM continuumio/miniconda3
 #directory to application, where all files should be copied
 
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && \
+    apt-get -y install gcc && \
+    rm -rf /var/lib/apt/lists/*
+
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
 COPY environment.yml .
-RUN conda install gcc
 RUN conda env create -f environment.yml
 
 #running conda env
