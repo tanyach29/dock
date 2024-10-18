@@ -4,6 +4,7 @@ channels:
   - defaults
   - pytorch
   - nvidia
+  - pip
 dependencies:
   - "python=3.10"
   - "matplotlib"
@@ -11,7 +12,6 @@ dependencies:
   - "pytorch"
   - "pytorch-cuda"
   - pip:
-    - "pip"
     - "ase"
     - "rdkit"
     - "mccoygroup-mcutils"
