@@ -1,8 +1,6 @@
 name: cmcc-rxn
 channels:
   - rdkit
-  - pytorch
-  - nvidia
   - defaults
 dependencies:
   - "rdkit"
