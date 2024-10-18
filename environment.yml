@@ -8,7 +8,8 @@ dependencies:
   - "python=3.10"
   - "matplotlib"
   - "ipykernel"
-  - "pip"
+  - "pytorch"
+  - "pytorch-cuda"
   - pip:
     - "ase"
     - "rdkit"
