@@ -4,12 +4,12 @@ FROM continuumio/miniconda3
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
 COPY environment.yml .
-RUN conda create -n environment.yml -c conda-forge gcc && conda activate environment.yml
+RUN conda create -n environment.yml -c conda-forge gcc
 RUN conda env create -f environment.yml
 
 #running conda env
 # make sure environment.yml replaced with env name
-# RUN conda init
+#RUN conda init
 # RUN conda activate cmcc-rxn
 
 # we shouldn't need the rest of this?
