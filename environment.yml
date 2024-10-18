@@ -11,6 +11,7 @@ dependencies:
   - "pytorch"
   - "pytorch-cuda"
   - pip:
+    - "pip"
     - "ase"
     - "rdkit"
     - "mccoygroup-mcutils"
