@@ -6,11 +6,11 @@ channels:
   - nvidia
 dependencies:
   - "python=3.10"
-  - "rdkit"
   - "matplotlib"
   - "ipykernel"
   - "pytorch"
   - "pytorch-cuda"
+  - "pip"
   - pip:
     - "ase"
     - "rdkit"
