@@ -4,13 +4,14 @@ channels:
   - defaults
   - pytorch
   - nvidia
-  - pip
 dependencies:
   - "python=3.10"
   - "matplotlib"
   - "ipykernel"
   - "pytorch"
   - "pytorch-cuda"
+  - "gcc"
+  -"pip"
   - pip:
     - "ase"
     - "rdkit"
