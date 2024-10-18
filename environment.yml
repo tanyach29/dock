@@ -10,7 +10,6 @@ dependencies:
   - "ipykernel"
   - "pytorch"
   - "pytorch-cuda"
-  - "gcc"
   - "pip"
   - pip:
     - "ase"
