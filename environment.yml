@@ -9,10 +9,10 @@ dependencies:
   - "rdkit"
   - "matplotlib"
   - "ipykernel"
-  - "pip"
   - "pytorch"
   - "pytorch-cuda"
   - pip:
     - "ase"
+    - "pip"
     - "mccoygroup-mcutils"
     - "git+https://github.com/isayevlab/AIMNet2"
