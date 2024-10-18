@@ -4,7 +4,7 @@ FROM continuumio/miniconda3
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
 COPY environment.yml .
-RUN conda create -n environment.yml -c conda-forge gcc
+RUN conda env create -n environment.yml -c conda-forge gcc
 RUN conda env create -f environment.yml
 
 #running conda env
