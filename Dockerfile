@@ -6,6 +6,10 @@ RUN apt-get update && \
     apt-get -y install gcc && \
     rm -rf /var/lib/apt/lists/*
 
+# copy gcc to g++ as a terrible hack
+RUN cp $(which gcc) $(dirname $(which gcc))/g++ && \
+    echo $(which g++)
+
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
 COPY environment.yml .
