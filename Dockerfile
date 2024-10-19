@@ -3,12 +3,12 @@ FROM continuumio/miniconda3
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-    apt-get -y install gcc && \
+    apt-get -y install gcc g++ && \
     rm -rf /var/lib/apt/lists/*
 
 # copy gcc to g++ as a terrible hack
-RUN cp $(which gcc) $(dirname $(which gcc))/g++ && \
-    echo $(which g++)
+# RUN cp $(which gcc) $(dirname $(which gcc))/g++ && \
+#     echo $(which g++)
 
 #creating conda env
 # make sure cmcc-reactions/enviornment.yml in same folder
