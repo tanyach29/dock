@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3
 #directory to application, where all files should be copied
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get -y install git gcc g++ && \
     rm -rf /var/lib/apt/lists/*
