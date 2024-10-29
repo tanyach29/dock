@@ -8,11 +8,11 @@ dependencies:
   - "python=3.10"
   - "matplotlib"
   - "ipykernel"
-  - "pytorch"
-  - "pytorch-cuda"
+  - "pybind-11"
   - "pip"
   - pip:
+    - "torch"
     - "ase"
     - "rdkit"
     - "mccoygroup-mcutils"
-    - "git+https://github.com/isayevlab/AIMNet2"
+  
